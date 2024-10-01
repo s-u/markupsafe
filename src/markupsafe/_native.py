@@ -61,3 +61,6 @@ def soft_str(s: t.Any) -> str:
         return str(s)
 
     return s
+
+def soft_unicode(s: t.Any) -> str:
+    return soft_str(s)

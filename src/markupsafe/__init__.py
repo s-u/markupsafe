@@ -13,7 +13,7 @@ if t.TYPE_CHECKING:
     _P = te.ParamSpec("_P")
 
 
-__version__ = "2.1.5"
+__version__ = "2.1.5-1"
 
 
 def _simple_escaping_wrapper(func: "t.Callable[_P, str]") -> "t.Callable[_P, Markup]":
@@ -330,3 +330,4 @@ except ImportError:
     from ._native import escape as escape
     from ._native import escape_silent as escape_silent  # noqa: F401
     from ._native import soft_str as soft_str  # noqa: F401
+from ._native import soft_unicode as soft_unicode
